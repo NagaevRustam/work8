@@ -17,18 +17,20 @@
 7) Загрузите работу на хостинг, используя инструкцию.
 -->
     <form action="upload.php" method="post" enctype="multipart/form-data">
-        <!--Поле с подписью «с каким именем сохранить файл на сервере» (текстовое поле)-->
-        <label for="text">Название файла:</label>
-        <input type="text" id="name" name="file_name">   <!--required-->
+        <!--Форма, отправляющая имя пользователя-->
+        <label for="text">Имя пользователя:</label>
+        <input type="text" id="name" name="username">   <!--required-->
         <br>
 
-        <!--Поле с подписью «выберите файл» (поле для загрузки файла)-->
-        <label for="file">Выберите файл:</label>
-        <input type="file" id="file" name="content">
-        <br>
-        <!--Кнопка загрузить файл-->
-        <button type="submit" value="Загрузить">Загрузить</button>
+        <!--Кнопка отправить-->
+        <button type="submit" value="Отправить">Загрузить</button>
     </form>
+
+
+    <!-- if (!isset($_SESSION['count'])) {
+        $_SESSION['count'] = 0;
+    } -->
+
 
 
 
